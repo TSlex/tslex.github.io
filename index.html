@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/osu-logo.png">
+    <title>OSU!StatsWatcher2.0</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exo.css">
+    <script src="jquery-3.2.1.js"></script>
+</head>
+<body>
+<div class="os-main triangleBack">
+    <h1><span style="font-size: 44px">osu!</span> StatsWatcher2.0 by TSlex</h1>
+    <div class="os-line"></div>
+    <div class="os-photo-cont" id="photo">
+        <div class="level">
+            <img class="levelIMG" src="images/levelbadge.png" height="50" width="50"/>
+            <span id="lvl">100</span>
+        </div>
+    </div>
+    <div class="os-mainStat-cont">
+        <div class="modeSelector triangleBack">
+            <div class="mode" onclick="updateStat('osuStandart')" id="osu">osu!</div>
+            <div class="mode" onclick="updateStat('osuTaiko')" id="Taiko" >Taiko</div>
+            <div class="mode" onclick="updateStat('osuCTB')" id="CTB" >CatchTheBeat</div>
+            <div class="mode" onclick="updateStat('osuMania')" id="mania" >osu!mania</div>
+        </div>
+        <div class="mainStat">
+            <span>Performance:</span>
+            <span>
+                <span id="PP" class="selectable">2288.0pp</span>
+                <span id="wRank" class="selectable">(#189277)</span>
+                <span class="selectable" style="position: relative"><img id="country" src="https://osu.ppy.sh/images/flags/EE.png"><!--src="images/EE.png"--></span>
+                <span id="lRank" class="selectable">#1283</span>
+            </span>
+            <span>
+                <span id="acc" class="selectable">Accuracy: 95.73%</span>
+            </span>
+        </div>
+    </div>
+    <div class="os-line"></div>
+    <div class="os-otherStat-cont">
+        <span id="name" class="selectable">TSlex</span>
+        <span id="rankedScore" class="selectable">Ranked Score: 2335655563</span>
+        <span id="totalScore" class="selectable">Total Score: 7439601626</span>
+        <span id="totalHits" class="selectable">Total Hits: 4342655</span>
+        <span id="playCount" class="selectable">Play Count: 4342655</span>
+        <span id="playA"><img src="images/ranking-A.png" alt="A"><span id="playACount" class="selectable">4920</span></span>
+        <span id="playS"><img src="images/ranking-S.png" alt="A"><span id="playSCount" class="selectable">4920</span></span>
+        <!--<span id="playSH"><img src="images/ranking-SH.png" alt="A"><span id="playSHCount" class="selectable">4920</span></span>-->
+        <span id="playX"><img src="images/ranking-X.png" alt="A"><span id="playXCount" class="selectable">4920</span></span>
+        <span id="playXH"><img src="images/ranking-XH.png" alt="A"><span id="playXHCount" class="selectable">4920</span></span>
+    </div>
+    <div class="os-line"></div>
+        <div class="os-input-cont">
+            <input type="text" id="newPlayer" class="" placeholder="">
+            <!--<div id="inputSelect">Asurichan</div>-->
+        </div>
+    <div id="showStat">GO!</div>
+        <div class="os-update-cont">Автообновление 30c.
+                <div class="os-update">
+                    <input type="checkbox" id="updateStat" class="regular-checkbox">
+                    <label for="updateStat"></label>
+                </div>
+        </div>
+
+</div>
+</body>
+</html>
